@@ -6,16 +6,14 @@ document.addEventListener('DOMContentLoaded', function () {
     let textAreaElem = document.querySelector('.textArea');
     let multipleBtnElem = document.querySelector('.multipleBtn');
 
-    
 
     var increment = 0;
-    // var decrement = 0;
-    // number = numberCounter.value
-  
+
+
 
     incrementBtnElem.addEventListener('click', function () {
         //  alert("hi")
-        var add = increment ++ 
+        var add = ++ increment 
         numberCounterElem.innerHTML = add
 
     });
@@ -31,17 +29,14 @@ document.addEventListener('DOMContentLoaded', function () {
     resetBtnElem.addEventListener('click',function(){
         // alert("hi")
         numberCounterElem.innerHTML = 0;
+        location.reload()
 
     });
 
 
-multipleBtnElem.addEventListener('click', function(){
-    var text = textAreaElem.value
-    textAreaElem.innerHTML = text
-})
-
-
-
-
+    multipleBtnElem.addEventListener('click', function(){
+            var text =  textAreaElem.value;
+            numberCounterElem.innerHTML = text * increment;
+    })
 
 });
