@@ -12,21 +12,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     incrementBtnElem.addEventListener('click', function () {
-        //  alert("hi")
-        var add = ++ increment 
-        numberCounterElem.innerHTML = add
-
+        ++increment
+    numberCounterElem.innerHTML = increment
+        
     });
-   
-    decrementBtnElem.addEventListener('click', function(){
-        if(increment > 0){
-            var minus = -- increment 
+
+    decrementBtnElem.addEventListener('click', function () {
+        if (increment > 0) {
+            var minus = --increment
             numberCounterElem.innerHTML = minus
         }
-     
-
     });
-    resetBtnElem.addEventListener('click',function(){
+    resetBtnElem.addEventListener('click', function () {
         // alert("hi")
         numberCounterElem.innerHTML = 0;
         location.reload()
@@ -34,9 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-    multipleBtnElem.addEventListener('click', function(){
-            var text =  textAreaElem.value;
-            numberCounterElem.innerHTML = text * increment;
-    })
-
-});
+    multipleBtnElem.addEventListener('click', function () {
+        increment = parseInt(textAreaElem.value) * increment;
+        numberCounterElem.innerHTML = increment;
+})
+})
