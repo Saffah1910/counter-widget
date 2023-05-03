@@ -24,7 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
     resetBtnElem.addEventListener('click', function () {
-        // alert("hi")
+         alert("Are you sure you want to reset?")
+            // window.open("")
+         
         numberCounterElem.innerHTML = 0;
         location.reload()
 
@@ -32,7 +34,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     multipleBtnElem.addEventListener('click', function () {
-        increment = parseInt(textAreaElem.value) * increment;
-        numberCounterElem.innerHTML = increment;
+      
+        
+            increment = parseInt(textAreaElem.value) * increment;
+            numberCounterElem.innerHTML = increment;
+        
+            
+      
 })
 })
