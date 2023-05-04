@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
     resetBtnElem.addEventListener('click', function () {
-         alert("Are you sure you want to reset?")
+      
             // window.open("")
          
         numberCounterElem.innerHTML = 0;
